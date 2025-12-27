@@ -7,16 +7,19 @@ export default function UsageExamples() {
         <section className="relative py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-16">
-                        <div className="space-y-4 mb-20">
+                        <div className="space-y-4 mb-8 md:mb-20">
                         <div className='flex justify-center'>
                         <Fade triggerOnce direction="up" duration={800} delay={200}>
-                            <h2 className="text-lg tracking-tighter mb-4 py-1 px-4 border border-blue-950 rounded-full text-blue-950">Cas d’usage</h2>
+                            <h2 className="text-lg tracking-tighter mb-4 py-1 px-4 border border-blue-950 rounded-full text-blue-950">
+                                Cas d’usage
+                            </h2>
                         </Fade>
                         </div>
                         <div className='flex justify-center'>
                         <Fade triggerOnce direction="up" duration={800} delay={200}>
-                            <h2 className="mb-8 font-bold text-3xl md:text-5xl 
-                            leading-tight tracking-tight max-w-2xl text-center">Comment Mazia peut transformer vos appels
+                            <h2 className="mb-8 font-bold text-4xl md:text-5xl 
+                            leading-tight tracking-tight max-w-2xl text-center">
+                                Comment Mazia peut transformer vos appels
                             </h2>
                         </Fade>
                         </div>
@@ -37,7 +40,7 @@ export default function UsageExamples() {
                                                 {item.title}
                                                 </h3>
                                                 <p className="text-base text-left max-w-sm">{item.description}</p>
-                                                <button className="bg-[#032CA6] px-8 text-sm py-2 rounded-xs text-white cursor-pointer">
+                                                <button className="bg-[#032CA6] px-8 text-sm py-2 rounded-xs text-white">
                                                     Voir Mazia en action
                                                 </button>
                                             </div>

@@ -20,7 +20,7 @@ export default function TrustedBy() {
                     </div>
                 </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 p-4 md:p-0 mt-6 md:mt-24">
                 {testimonialsData.map((item, i) => {
                     return(
                     <div 

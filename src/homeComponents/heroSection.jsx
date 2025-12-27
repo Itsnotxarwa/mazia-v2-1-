@@ -8,7 +8,7 @@ export default function HeroSection() {
                             <div className="flex flex-col justify-center items-center">
                                 <div className="flex flex-col items-center justify-center">
                                     <Fade direction="up" triggerOnce duration={800}>
-                                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center mx-8 lg:mx-16 tracking-tighter text-balance leading-14 md:leading-18" 
+                                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center mx-2 lg:mx-16 tracking-tighter text-balance leading-14 md:leading-18" 
                                     >
                                         Automatisez vos appels et améliorez votre relation client.                                        
                                     </h1>

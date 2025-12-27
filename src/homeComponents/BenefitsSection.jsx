@@ -28,13 +28,13 @@ export default function BenefitsSection() {
                   </div>
                 </div>
                 <Fade triggerOnce direction='up' duration={1000} delay={800}>
-                <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 space-y-4">
             {benefits.map((item, i) => {
               const Icon = item.icon;
               return (
                 <div
                   key={i}
-                  className="group p-8 text-left 
+                  className="group p-4 md:p-8 text-left 
                   transition-all duration-500
                   overflow-hidden flex flex-col justify-center"
                 >

@@ -13,9 +13,11 @@ export default function FeaturesSection() {
             />
 
             <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center">
-                    <div className="space-y-6">
+                <div className="flex flex-col md:flex-row space-y-6 justify-between items-center">
+                    <div className="md:space-y-6 flex md:flex-col gap-3">
+                        <div className="flex items-center justify-center md:justify-start">
                         <img src={LogoSahpe} className="w-14" />
+                        </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-white md:leading-14">
                             Fonctionnalités 
                             <br />
@@ -23,8 +25,8 @@ export default function FeaturesSection() {
                         </h2>
                     </div>
                     <div className="space-y-4">
-                        <p className="text-white/80 text-sm leading-relaxed max-w-sm">Mazia combine l’intelligence vocale, la compréhension du langage naturel et des flux conversationnels optimisés pour gérer tous vos appels.</p>
-                        <div className="flex justify-start">
+                        <p className="text-white/80 text-sm px-8 md:px-0 leading-relaxed max-w-sm">Mazia combine l’intelligence vocale, la compréhension du langage naturel et des flux conversationnels optimisés pour gérer tous vos appels.</p>
+                        <div className="flex justify-start ml-8 md:ml-0">
                         <a href="/demo" className="group flex items-center justify-center gap-2 bg-[#032CA6] hover:bg-[#032CA6]/80 text-white px-6 py-2 font-medium transition-all text-sm cursor-pointer">
                             Essayez Mazia gratuitement
                         </a>
@@ -32,7 +34,7 @@ export default function FeaturesSection() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-24">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 md:p-0 mt-12 md:mt-24">
                     {features.map((item,i) => {
                         const Icon = item.icon;
                         return(

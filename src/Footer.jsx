@@ -103,6 +103,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
+                    </div>
                     <div className="space-y-4">
                         <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Contact</h3>
                         <ul className="space-y-3">
@@ -127,8 +128,6 @@ export default function Footer() {
                                 </a>
                             </li>
                         </ul>
-                    </div>
-
                     </div>
                 </div>
             </div>
