@@ -1,14 +1,15 @@
 import { Fade } from "react-awesome-reveal";
 import { ArrowRight, ArrowUpRight  } from "lucide-react";
+import AudioPlayer from "./AudioPlayer";
 
 export default function HeroSection() {
     return(    
-                    <section className="relative pb-24 pt-24 lg:pt-48">
-                        <div className="max-w-6xl mx-auto px-8 sm:px-6 lg:px-16 flex flex-col gap-32">
-                            <div className="flex flex-col justify-center items-center">
+                    <section className="relative py-24">
+                        <div className="max-w-6xl mx-auto px-8 sm:px-6 lg:px-16 flex flex-col">
+                            <div className="flex flex-col justify-center items-center mb-8">
                                 <div className="flex flex-col items-center justify-center">
                                     <Fade direction="up" triggerOnce duration={800}>
-                                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center mx-2 lg:mx-16 tracking-tighter text-balance leading-14 md:leading-18" 
+                                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center mx-2 lg:mx-14 tracking-tighter text-balance leading-14 md:leading-18" 
                                     >
                                         Automatisez vos appels et améliorez votre relation client.                                        
                                     </h1>
@@ -20,7 +21,7 @@ export default function HeroSection() {
                                     </Fade>
                                 </div>
                                 <Fade direction="up" triggerOnce duration={800} delay={400}>
-                                <div className="mt-16 flex gap-4 items-center justify-center">
+                                <div className="mt-12 flex gap-4 items-center justify-center">
 
                                 <a
                                 href="/demo"
@@ -42,7 +43,9 @@ export default function HeroSection() {
                                 </div>
                                 </Fade>
                             </div>
-
+                            <div className="hidden md:flex justify-center">
+                                <AudioPlayer />
+                            </div>
                         </div>
                     </section>
     )
