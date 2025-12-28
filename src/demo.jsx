@@ -27,17 +27,17 @@ export default function Demo() {
     return(
         <div className="min-h-screen">
             <Header />
-            <section className="py-24">
-                <div className="space-x-6 grid grid-cols-1 md:grid-cols-2 space-y-6  mx-6 lg:mx-12">
-                    <div className="">
-                        <div>
-                            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-8 tracking-tight ">
-                                Faites-vous appeler 
-                                <br />
-                                par Mazia
-                            </h1>
-                            <p className="text-black/60 text-lg">Renseignez vos coordonnées et notre agent conversationnel vous rappellera  pour vous présenter nos solutions et répondre à toutes vos questions.</p>
-                        </div>
+            <section className="lg:py-24 py-12">
+                <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-8 lg:mb-0 ml-6 lg:ml-12 tracking-tight ">
+                    Faites-vous appeler 
+                    <br />
+                    par Mazia
+                </h1>
+                <div className="space-x-6 flex flex-col lg:flex-row items-center space-y-6  mx-6 lg:mx-12">
+                    <div className="max-w-3xl">
+                            <p className="text-black/60 text-lg">
+                            Renseignez vos coordonnées et notre agent conversationnel vous rappellera  pour vous présenter nos solutions et répondre à toutes vos questions.
+                            </p>
                         <div className="space-y-6 p-4 lg:p-8 ">
                                 {rules.map((item,i) => {
                                     const Icon = item.icon;

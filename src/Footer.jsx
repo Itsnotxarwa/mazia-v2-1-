@@ -5,7 +5,7 @@ export default function Footer() {
     return(
         <footer className="pt-24 pb-12 sm:pt-32 sm:pb-16">
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row space-y-6 gap-24">
+                <div className="flex flex-col md:flex-row space-y-6 gap-12 md:gap-24">
                     <div className='flex flex-col justify-between space-y-6'>
                         <div className='space-y-6'>
                         <img src={mazLogo} alt="Logo" className="w-44" />

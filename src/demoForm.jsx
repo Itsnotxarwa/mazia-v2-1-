@@ -127,12 +127,12 @@ export default function DemoForm() {
                 {serverError}
             </p>
         )}
-        <div className="lg:p-8 lg:flex items-center justify-center text-left">
+        <div className="lg:p-8 lg:flex items-center justify-center flex-1 sm:w-full text-left">
         <form action="" className="space-y-4" onSubmit={handleCall}>
             <div className="w-full grid grid-cols-2 gap-4">
                 <div className="space-y-1 flex flex-col">
                     <label htmlFor="first_name" 
-                    className="text-sm text-white font-medium">
+                    className="text-sm text-black/60 font-medium">
                         Prénom
                     </label>
                     <input 
@@ -148,7 +148,7 @@ export default function DemoForm() {
                 <div className="space-y-1 flex flex-col">
                     <label 
                     htmlFor="lastName" 
-                    className="text-sm text-white font-medium">
+                    className="text-sm text-black/60 font-medium">
                         Nom
                     </label>
                     <input 
@@ -165,7 +165,7 @@ export default function DemoForm() {
                 <div className="w-full space-y-1 flex flex-col">
                     <label 
                     htmlFor="email" 
-                    className="text-sm text-white font-medium">
+                    className="text-sm text-black/60 font-medium">
                         Email
                     </label>
                     <input 
@@ -181,7 +181,7 @@ export default function DemoForm() {
                 <div className="w-full space-y-1 flex flex-col dropdown-container">
                     <label 
                     htmlFor="phone_number" 
-                    className="text-sm text-white font-medium">
+                    className="text-sm text-black/60 font-medium">
                         Téléphone
                     </label>
 
