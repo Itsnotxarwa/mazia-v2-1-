@@ -32,7 +32,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return(
-        <header className="fixed w-full top-0 z-50 border-b border-black/10 bg-white/80">
+        <header className="sticky lg:fixed w-full top-0 z-50 border-b border-black/10 bg-white/80">
             <div className="mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     <div>
