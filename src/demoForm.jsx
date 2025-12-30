@@ -236,7 +236,7 @@ export default function DemoForm() {
              {phoneError && <p style={{ color: "red" }}>{phoneError}</p>}
                 <div className="flex items-center justify-center">
                     <ReCAPTCHA
-                    sitekey="6LcZvzIsAAAAAMPJ7PMbSXGANrdFRDsupQXyBoor"
+                    sitekey="6LdDjTosAAAAAEJ50yZp6duJaP5hfuO2HQfTdHXt"
                     ref={recaptchaRef}
                     onChange={() => setCaptchaDone(true)}
                     />
