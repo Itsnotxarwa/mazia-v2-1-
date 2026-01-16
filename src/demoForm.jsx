@@ -132,7 +132,7 @@ export default function DemoForm() {
     return(
         <div className="flex flex-col">
         {serverError && (
-            <p className="text-red-600 text-sm font-medium mb-4">
+            <p className="text-red-600 text-sm font-medium mb-4 text-center">
                 {serverError}
             </p>
         )}
