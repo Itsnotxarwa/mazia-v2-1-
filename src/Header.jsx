@@ -18,7 +18,7 @@ export default function Header() {
             href: "/#cas-usage",
         },
         {   
-            link: "Il nous ont fait confiance",
+            link: "Ils nous ont fait confiance",
             href: "/#testimonials",
         },
         {   

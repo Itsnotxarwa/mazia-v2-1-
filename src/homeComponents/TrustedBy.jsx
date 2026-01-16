@@ -12,7 +12,7 @@ export default function TrustedBy() {
                 <div className="flex items-center justify-center">
                     <div className="space-y-6">
                         <h2 className="text-4xl max-w-5xl md:text-5xl text-white font-semibold md:leading-14 mb-8 text-center">
-                            Il nous ont fait confiance
+                            Ils nous ont fait confiance
                         </h2>
                         <p className="text-lg max-w-xl mb-6 text-center text-white px-4">
                             Des entreprises de tous secteurs utilisent Mazia pour automatiser leurs interactions téléphoniques et améliorer la productivité. Découvrez quelques-uns de nos clients et les bénéfices qu’ils ont obtenus grâce à notre assistant IA.
