@@ -150,7 +150,7 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li className="flex justify-end">
-                                <a href=""
+                                <a href="/devenir-partenaire"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Devenir Partenaire
                                 </a>
