@@ -35,7 +35,6 @@ export default function TrustedBy() {
                             </div>
                             <div className="flex items-center justify-between">
                                 <h3 className="text-lg font-medium">{item.name}</h3>
-                                <p className="text-sm">{item.entreprise}</p>
                             </div>
                         </div>
                     </div>
