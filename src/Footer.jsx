@@ -40,42 +40,42 @@ export default function Footer() {
                         <ul className="space-y-3">
                             <li>
                                 <a 
-                                href=""
+                                href="https://www.mazia.ai/"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Accueil
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href=""
+                                href="https://www.mazia.ai/#fonctionnalities"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Fonctionnalitiés
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href=""
+                                href=": https://www.mazia.ai/#cas-usage"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Cas d'usage
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href=""
+                                href="https://www.mazia.ai/#tarifs"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Tarifs
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href=""
+                                href="https://www.mazia.ai/#testimonials"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Ils nous ont fait confiance
                                 </a>
                             </li>
                             <li>
                                 <a 
-                                href=""
+                                href="#"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Contact
                                 </a>
