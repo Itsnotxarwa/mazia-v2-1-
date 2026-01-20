@@ -29,7 +29,7 @@ export default function Header() {
         },
         {   
             link: "Contact",
-            href: "#",
+            href: "/contact",
             title: "Contactez Mazia | Testez votre agent IA personnalisé"
         },
     ]

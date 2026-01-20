@@ -3,6 +3,7 @@ import './index.css';
 import Homepage from './homepage';
 import Demo from './demo';
 import BecomePartner from './components/BecomePartner';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path='/demo' element={<Demo />} />
         <Route path='/' element={<Homepage />} />
         <Route path='/devenir-partenaire' element={<BecomePartner />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
     </>
