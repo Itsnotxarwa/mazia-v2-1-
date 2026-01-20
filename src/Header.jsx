@@ -30,7 +30,9 @@ export default function Header() {
         {   
             link: "Contact",
             href: "/contact",
-            title: "Contactez Mazia | Testez votre agent IA personnalisé"
+            title: "Contactez Mazia | Testez votre agent IA personnalisé",
+            target: "_blank",
+            rel: "noopener noreferrer"
         },
     ]
 
@@ -54,6 +56,8 @@ export default function Header() {
                                         <a 
                                         href={item.href} 
                                         title={item.title}
+                                        target={item.target}
+                                        rel={item.rel}
                                         className="group relative px-4 py-2 flex items-center justify-center gap-1 
                                         leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-[#032ca6]/10"
                                         >

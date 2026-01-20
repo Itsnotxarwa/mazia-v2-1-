@@ -92,7 +92,9 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a 
-                                href="#"
+                                href="/contact"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Contact
                                 </a>
