@@ -1,39 +1,51 @@
-import { Dot} from "lucide-react";
+import { useState } from "react";
 import { question } from "../data/Questions";
-import bgImage from "../assets/bg.png"
+import { ChevronDown } from "lucide-react";
 
 export default function QuestionsSection() {
+    const [openIndex, setOpenIndex] = useState(null);
 
     return(
         <section id="questions" className="relative py-24 px-4 min-h-screen">
 
-            <img 
-            src={bgImage} 
-            className="absolute w-full h-full inset-0 object-cover z-0" />
-
             <div className="relative max-w-5xl mx-auto ">
-                <div className="text-left mb-14">
-                    <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight">Questions fréquentes</h3>
+                <div className="text-center mb-14">
+                    <h3 className="text-3xl md:text-5xl font-bold text-black tracking-tight">Questions fréquentes</h3>
                 </div>
             
             
-                <div className="mx-auto py-8 px-4 sm:px-6 bg-[#e2e9fe]">
+                <div className="mx-auto py-8 px-4 sm:px-6">
                     <div className="space-y-1">
                         {question.map((item,i) => {
+                        const isOpen = openIndex === i;
                         return(
                         <div 
                         key={i}
-                        className="flex flex-col group backdrop-blur-sm rounded-lg 
-                        overflow-hidden ">
-                                <div className="space-y-6">
-                                    <ul className="list-disc pl-5">
-                                        <li className="font-medium md:text-lg text-base">{item.question}</li>
-                                    </ul>
-                                </div>
-                            <div className="px-5 pb-4 w-full">
-                                <div className="w-10 h-px border-t border-dashed border-black/10 mb-3"></div>
-                                <p className="text-black/70 text-sm md:text-lg text-left">{item.answer}</p>
-                            </div>
+                        className="flex flex-col group overflow-hidden group mb-4
+                        bg-white border border-gray-200 hover:border-[#032CA6]/70 transition-all duration-300  rounded-lg shadow-xs hover:shadow-lg">
+                                    <div className="flex justify-between items-center cursor-pointer 
+                                    group-hover:bg-gray-50 px-6 md:px-8 py-6 md:py-8 "
+                                    onClick={() => setOpenIndex(isOpen ? null : i)}>
+                                        <h3 className="text-lg md:text-xl text-left font-bold">
+                                            {item.question}
+                                        </h3>
+                                            <ChevronDown size={18} className={`transition-transform duration-300 
+                                                ${isOpen ? "rotate-180" : "rotate-0"}`} />
+                                    </div>
+                                {isOpen && (
+                                    <div className="px-5 pb-4 w-full">
+                                        <div className="w-10 h-px border-t border-dashed border-black/10 mb-3"></div>
+                                        {Array.isArray(item.answer) ? (
+                                            <ul className="list-disc pl-5 text-black/70 text-sm md:text-lg text-left space-y-1">
+                                                {item.answer.map((ans, index) => (
+                                                    <li key={index}>{ans}</li>
+                                                ))}
+                                            </ul>
+                                        ) : (
+                                            <p className="text-black/70 text-sm md:text-lg text-left">{item.answer}</p>
+                                        )}
+                                    </div>
+                                )}
                         </div>
                         )})}
                     </div>
