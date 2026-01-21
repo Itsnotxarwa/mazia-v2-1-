@@ -5,18 +5,28 @@ import { ChevronDown } from "lucide-react";
 export default function QuestionsSection() {
     const [openIndex, setOpenIndex] = useState(null);
 
+    const [visibleCount, setVisibleCount] = useState(3);
+
+    const handleToggle = () => {
+        if (visibleCount >= question.length) {
+            setVisibleCount(3);
+        } else {
+            setVisibleCount(prev => prev + 3);
+        } 
+    }
+
     return(
         <section id="questions" className="relative py-24 px-4 min-h-screen">
 
             <div className="relative max-w-5xl mx-auto ">
                 <div className="text-center mb-14">
-                    <h3 className="text-3xl md:text-5xl font-bold text-black tracking-tight">Questions fréquentes</h3>
+                    <h2 className="text-3xl md:text-5xl font-bold text-black tracking-tight">Questions fréquentes</h2>
                 </div>
             
             
                 <div className="mx-auto py-8 px-4 sm:px-6">
                     <div className="space-y-1">
-                        {question.map((item,i) => {
+                        {question.slice(0, visibleCount).map((item,i) => {
                         const isOpen = openIndex === i;
                         return(
                         <div 
@@ -48,6 +58,12 @@ export default function QuestionsSection() {
                                 )}
                         </div>
                         )})}
+                        <div 
+                        className="flex justify-end text-sm text-black/70 hover:underline
+                        cursor-pointer"
+                        onClick={handleToggle}>
+                            {visibleCount >= question.length ? "Voir moins" : "Voir plus"}
+                        </div>
                     </div>
                 </div>
                 </div>

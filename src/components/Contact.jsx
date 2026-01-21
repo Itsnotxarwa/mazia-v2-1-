@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   useEffect(() => {
@@ -14,6 +15,10 @@ function Contact() {
 
   return (
     <section id="contact">
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Testez un agent Mazia pour votre entreprise ou projet. <br>Appelez Linda, notre secrétaire virtuelle IA, ou inscrivez-vous pour une démonstration personnalisée." />
+      </Helmet>
       <div
         className="meetings-iframe-container"
         data-src="https://meetings-eu1.hubspot.com/mazia?embed=true"
