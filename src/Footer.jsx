@@ -148,7 +148,7 @@ export default function Footer() {
                                 </div>
                                 <a 
                                 href=""
-                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:underline">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors whitespace-nowrap hover:underline">
                                     +33 423330751
                                 </a>
                             </li>
