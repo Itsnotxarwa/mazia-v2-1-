@@ -27,8 +27,8 @@ export default function FeaturesSection() {
                     <div className="space-y-4">
                         <p className="text-white/80 text-sm px-8 md:px-0 leading-relaxed max-w-sm">Mazia combine l’intelligence vocale, la compréhension du langage naturel et des flux conversationnels optimisés pour gérer tous vos appels.</p>
                         <div className="flex justify-start ml-8 md:ml-0">
-                        <a href="/demo" className="group flex items-center justify-center gap-2 bg-[#032CA6] hover:bg-[#032CA6]/80 text-white px-6 py-2 font-medium transition-all text-sm cursor-pointer">
-                            Essayez Mazia gratuitement
+                        <a href="/demo" className="group flex items-center justify-center gap-2 transition-colors duration-300 bg-[#032CA6] hover:bg-[#032899] text-white px-6 py-2 font-medium text-sm cursor-pointer">
+                            Discutons en maintenant
                         </a>
                         </div>
                     </div>

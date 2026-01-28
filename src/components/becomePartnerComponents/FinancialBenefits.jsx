@@ -23,7 +23,7 @@ const avantagesFinanciers = [
     }
 ];
 
-export default function BenefitsForPartners() {
+export default function FinancialBenefits() {
     return(
         <section className="py-24 min-h-screen">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">

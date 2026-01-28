@@ -8,27 +8,32 @@ gsap.registerPlugin(ScrollTrigger);
  const steps = [
         {
             id: 1,
-            title: "Écoute et compréhension",
-            description: "Grâce à notre technologie de reconnaissance vocale, l’agent Mazia écoute chaque interlocuteur et comprend son intention et le contexte."
+            title: "Prise de contact et qualification",
+            description: "Nous discutons de votre profil, de vos clients et de vos objectifs. "
         },
         {
             id: 2,
-            title: "Action automatisée via vos outils",
-            description: "Connecté au CRM ou ERP du client, il peut mettre à jour les informations, créer des leads, planifier des rendez-vous, ou orienter les appels vers l’agent humain le plus pertinent."
+            title: "Présentation de l’offre",
+            description: "Démonstration live de l’agent Mazia et des cas d’usage adaptés à vos clients. "
         },
         {
             id: 3,
-            title: "Interaction naturelle",
-            description: "Notre technologie de synthèse vocale permet de répondre de façon fluide et humaine, avec un ton adapté à chaque conversation."
+            title: "Formation et onboarding",
+            description: "Sessions en ligne pour vous familiariser avec les outils, le CRM et le script conversationnel. "
         },
         {
             id: 4,
-            title: "Apprentissage continu",
-            description: "L’IA améliore sa compréhension et sa pertinence à chaque interaction, garantissant une expérience client toujours plus performante."
+            title: "Premiers tests clients",
+            description: "Mise en place d’un pilote pour un segment limité, suivi et optimisation. "
+        },
+        {
+            id: 5,
+            title: "Déploiement et accompagnement continu",
+            description: "Suivi, reporting et optimisation des performances pour garantir le succès commercial et opérationnel. "
         }
 ];
 
-export default function HowItWorks() {
+export default function ProcessusDePartenariat() {
     const lineRef = useRef(null);
     const containerRef = useRef(null);
 
@@ -55,17 +60,17 @@ export default function HowItWorks() {
                 <div className="flex justify-center items-center">
                     <Fade triggerOnce direction="up" duration={800}>
                     <h3 className="text-lg py-1 px-4 border whitespace-nowrap border-blue-950 text-blue-950 rounded-full tracking-tighter mb-4">
-                        Comment fonctionne l’agent Mazia ?
+                        Processus de partenariat 
                     </h3>
                     </Fade>
                 </div>
                 <Fade triggerOnce direction="up" duration={800}>
                 <p className="text-2xl max-w-5xl mx-auto md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
-                    L’agent Mazia n’est pas un simple robot : c’est un assistant intelligent qui agit comme un commercial ou une secrétaire 24/7.
+                    Le parcours pour devenir partenaire Mazia est simple et rapide
                 </p>
                 </Fade>
                 <div ref={containerRef} className="relative">
-                    <div className="absolute hidden md:block left-10 top-5 h-180 w-0.5 bg-blue-900 origin-top" ref={lineRef}></div>
+                    <div className="absolute hidden md:block left-10 top-5 h-200 w-0.5 bg-blue-900 origin-top" ref={lineRef}></div>
                     <div className="space-y-12">
                         {steps.map((step,i) => (
                             <Fade direction="up" triggerOnce cascade={false} duration={800} >
@@ -73,13 +78,13 @@ export default function HowItWorks() {
                             key={i}
                             className="flex items-start gap-2 md:gap-8">
                                 <div className="shrink-0">
-                                    <div className="w-8 h-8 md:w-20 md:h-20 rounded-full bg-blue-900 text-lg md:text-2xl shadow-lg flex justify-center items-center font-bold text-white">
+                                    <div className="w-8 h-8 md:w-20 md:h-20 rounded-full bg-blue-900 text-lg md:text-2xl shadow-lg flex justify-center items-center font-semibold text-white">
                                         {step.id}
                                     </div>
                                 </div>
                                 
-                                <div className="flex flex-col p-4 md:p-8 bg-white shadow-xl transition-shadow duration-300 rounded-2xl gap-2 border border-[#032ca6]/5
-                                hover:shadow-2xl">
+                                <div className="flex flex-col p-4 md:p-8 bg-white shadow-xl transition-shadow duration-300 rounded-2xl gap-1 border border-[#032ca6]/5
+                                hover:shadow-2xl w-full">
                                     <h3 className="text-2xl font-semibold mb-2">
                                         {step.title}
                                     </h3>

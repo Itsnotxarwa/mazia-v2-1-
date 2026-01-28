@@ -80,10 +80,10 @@ export default function Header() {
                                 >
                             <ul className="h-6 relative overflow-hidden">
                                 <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
-                                    Essayez Mazia gratuitement <ArrowUpRight size={18} />
+                                    Discutons en maintenant <ArrowUpRight size={18} />
                                 </li>
                                 <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
-                                    Essayez Mazia gratuitement <ArrowRight size={18} />
+                                    Discutons en maintenant <ArrowRight size={18} />
                                 </li>
                             </ul>
                         </a>
