@@ -27,7 +27,7 @@ export default function PartnerProfile() {
         <section className="min-h-screen py-16">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <Fade triggerOnce direction="up" duration={800}>
-                <h3 className="text-4xl font-bold text-center text-blue-900">
+                <h3 className="text-2xl font-bold text-center text-blue-900">
                     Cette opportunité s’adresse à différents profils de partenaires : 
                 </h3>
                 </Fade>
@@ -36,18 +36,18 @@ export default function PartnerProfile() {
                         <Fade triggerOnce direction="up" duration={800}>
                         <div
                         key={i}
-                        className="h-96 flex flex-col items-center justify-center p-8 bg-white shadow-lg rounded-2xl
+                        className="lg:h-96 flex flex-col items-center justify-center p-8 bg-white shadow-lg rounded-2xl
                         hover:shadow-2xl transition-all duration-300 relative group border border-[#032ca6]/5">
                             <div className="absolute inset-0 bg-linear-to-br from-[#032ca6]/5 to-white backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100"></div>
                             <div className="relative flex justify-center items-center z-10">
-                                <div className="w-20 h-20 bg-[#032ca6]/10 rounded-full absolute z-0 "></div>
-                                <img src={item.image} className="w-40 relative z-10" />
+                                <div className="w-14 h-14 md:w-20 md:h-20 bg-[#032ca6]/10 rounded-full absolute z-0 "></div>
+                                <img src={item.image} className="w-25 md:w-40 relative z-10" />
                             </div>
                             <div className="relative z-10">
-                                <h3 className="text-3xl font-bold tracking-tight text-blue-900 text-center px-6">
+                                <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-blue-900 text-center md:px-6">
                                     {item.title}
                                 </h3>
-                                <p className="text-lg text-center px-6 mt-6">
+                                <p className="text-lg text-center md:px-6 mt-6">
                                     {item.description}
                                 </p>
                             </div>

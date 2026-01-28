@@ -1,23 +1,29 @@
 import { Fade } from "react-awesome-reveal";
+import { HandFist, ChartLine, Phone, Workflow, Calendar } from "lucide-react";
 
 const useCases = [
   {
+    icon: HandFist,
     title: "Support et service client",
     description: "Réduction des temps d’attente, réponses instantanées, gestion 24/7 des appels entrants."
   },
   {
+    icon: ChartLine,
     title: "Acquisition et vente",
     description: "Qualification automatique des leads, prise de rendez-vous et suivi commercial sans effort humain."
   },
   {
+    icon: Phone,
     title: "Secrétariat et gestion d’appels",
     description: "Réception et gestion des appels, filtrage et orientation vers les bonnes équipes."
   },
   {
+    icon: Workflow,
     title: "Automatisation des processus métier",
     description: "Intégration à des workflows existants, déclenchement d’actions sur ERP, CRM ou autres systèmes."
   },
   {
+    icon: Calendar,
     title: "Service interne",
     description: "Organisation des agendas, notifications, rappels et coordination interne."
   },
@@ -35,20 +41,39 @@ export default function UseCases() {
         </div>
         </Fade>
         <Fade triggerOnce direction="up" duration={800}>
-        <p className="text-4xl max-w-5xl mx-auto md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
+        <p className="text-2xl max-w-5xl mx-auto md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
             Les partenaires Mazia peuvent proposer des solutions adaptées à différents métiers et besoins :
         </p>
         </Fade>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {useCases.map((item, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-1">
+          {useCases.map((item, i) => {
+            const Icon = item.icon;
+            return(
             <Fade key={i} direction="up" triggerOnce cascade={false} duration={700}>
-              <div className="p-8 bg-white shadow-lg rounded-2xl border border-[#032CA6]/10 hover:shadow-2xl transition-all">
-                <h3 className="text-2xl font-semibold text-black mb-2">{item.title}</h3>
+              <div className="p-2 space-y-6 text-center">
+                <div className="flex justify-center">
+                <Icon className="text-blue-900" size={34} />
+                </div>
+                <div>
+                <h3 className="text-2xl font-bold mb-2 text-blue-900">{item.title}</h3>
                 <p className="text-black/70 text-lg">{item.description}</p>
+                </div>
               </div>
             </Fade>
-          ))}
+          )})}
         </div>
+      </div>
+      <div className="mt-12 py-8 w-full bg-[#032ca6]/10 flex items-center justify-center">
+          <p className="text-xl text-center leading-relaxed px-4">
+              <span className="text-blue-900 font-bold">
+                  Chaque cas d’usage peut être personnalisé
+              </span>
+              {" "} pour les besoins spécifiques du client final, garantissant {" "}
+              <br />
+              <span className="text-blue-900 font-bold">
+                  un retour sur investissement rapide et tangible.
+              </span>
+          </p>
       </div>
     </section>
   );
