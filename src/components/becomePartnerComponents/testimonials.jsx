@@ -25,7 +25,7 @@ export default function Testimonials() {
                     <span className="text-6xl text-[#032ca6] absolute -top-6 -left-4">
                         <MessageSquareQuote size={34}/>                    
                     </span>
-                    <p className="text-gray-700 text-sm md:text-lg leading-relaxed mb-4">{t.quote}</p>
+                    <p className="text-gray-700 text-lg leading-relaxed mb-4">{t.quote}</p>
                     <p className="font-semibold text-gray-900">– {t.author}</p>
                 </div>
             ))}

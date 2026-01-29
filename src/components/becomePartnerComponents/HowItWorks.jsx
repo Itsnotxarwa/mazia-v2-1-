@@ -65,7 +65,7 @@ export default function HowItWorks() {
                 </p>
                 </Fade>
                 <div ref={containerRef} className="relative">
-                    <div className="absolute hidden md:block left-10 top-5 h-180 w-0.5 bg-blue-900 origin-top" ref={lineRef}></div>
+                    <div className="absolute hidden md:block left-10 top-5 h-155 w-0.5 bg-blue-900 origin-top" ref={lineRef}></div>
                     <div className="space-y-12">
                         {steps.map((step,i) => (
                             <Fade direction="up" triggerOnce cascade={false} duration={800} >

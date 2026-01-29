@@ -4,26 +4,18 @@ const whyChooseMazia = [
     {
         title: "L’agent conversationnel le plus humain du marché",
         description: "Capable de gérer les appels entrants et sortants avec une fluidité naturelle.",
-        direction: "right",
-        position: "flex justify-end"
     },
     {
         title: "Une intégration complète à vos outils métier",
         description: "Connexion aux CRM, ERP, agendas et workflows personnalisés.",
-        direction: "left",
-        position: "flex justify-start"
     },
     {
         title: "Un accompagnement complet pour nos partenaires",
         description: "Formation, support, démonstrations et mises à jour continues.",
-        direction: "right",
-        position: "flex justify-end"
     },
     {
         title: "Une solution qui renforce l’humain",
         description: "Mazia ne remplace pas vos équipes, elle les rend plus performantes et libère du temps pour les tâches à forte valeur ajoutée.",
-        direction: "left",
-        position: "flex justify-start"
     }
 ];
 
@@ -48,11 +40,11 @@ export default function WhyMazia() {
                 </div>
                 <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-8">
                     {whyChooseMazia.map((reason,i) => (
-                        <Fade triggerOnce direction={reason.direction} duration={1000}>
+                        <Fade triggerOnce direction="up" duration={1000}>
                         <div
                         key={i}
                         className="p-6 space-y-2 text-center">
-                            <h3 className="text-blue-900 text-xl font-bold">
+                            <h3 className="text-blue-900 text-2xl font-semibold">
                                 {reason.title}
                             </h3>
                             <p className="text-lg">

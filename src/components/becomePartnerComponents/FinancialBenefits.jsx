@@ -49,7 +49,7 @@ export default function FinancialBenefits() {
                                     <Icon className="text-blue-900" size={34} />
                                 </div>
                                 <div>
-                                    <h3 className="text-2xl font-bold mb-2 text-blue-900">{item.title}</h3>
+                                    <h3 className="text-2xl font-semibold mb-2 text-blue-900">{item.title}</h3>
                                     <p className="text-black/70 text-lg">{item.description}</p>
                                 </div>
                             </div>

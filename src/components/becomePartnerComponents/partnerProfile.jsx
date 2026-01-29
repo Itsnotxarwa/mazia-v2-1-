@@ -44,7 +44,7 @@ export default function PartnerProfile() {
                                 <img src={item.image} className="w-25 md:w-40 relative z-10" />
                             </div>
                             <div className="relative z-10">
-                                <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-blue-900 text-center md:px-6">
+                                <h3 className="text-2xl font-semibold tracking-tight text-blue-900 text-center md:px-6">
                                     {item.title}
                                 </h3>
                                 <p className="text-lg text-center md:px-6 mt-6">
