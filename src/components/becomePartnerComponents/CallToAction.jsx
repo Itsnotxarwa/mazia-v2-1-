@@ -6,7 +6,7 @@ export default function CallToAction() {
         <section className="min-h-screen py-24">
             <div className="max-w-7xl mx-auto px-0 lg:px-8">
             <div className="relative bg-[#032ca6]/90 p-12 lg:rounded-sm 
-            grid grid-cols-1 lg:grid-cols-2 items-center w-full lg:max-w-4xl mx-auto">
+            grid grid-cols-1 lg:grid-cols-2 items-center w-full lg:max-w-4xl">
                 <Fade triggerOnce direction="left" duration={800}>
                 <div className="space-y-6">
                     <h2 className=" text-2xl md:text-4xl font-bold mb-4 text-white">

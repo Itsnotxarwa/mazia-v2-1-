@@ -21,9 +21,9 @@ export default function BenefitsForPartners() {
     ]
     return(
         <section className="py-24 min-h-screen">
-            <div className=" mx-auto px-4 md:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <Slide triggerOnce direction="left" duration={1000}>
-                <div className="bg-[#032ca6]/10 rounded-4xl p-8 grid grid-cols-1 lg:grid-cols-2 lg:w-7xl">
+                <div className="bg-[#032ca6]/10 rounded-4xl p-8 grid grid-cols-1 lg:grid-cols-2 lg:w-4xl">
                     <div className="flex flex-col justify-center lg:max-w-2xl mx-auto px-6 gap-4 mb-4">
                         <h3 className="text-4xl lg:text-6xl font-bold tracking-tight text-[#032ca6] mb-4">
                             Pourquoi devenir partenaire Mazia ?
@@ -32,14 +32,14 @@ export default function BenefitsForPartners() {
                             Mazia offre un programme conçu pour créer une relation gagnant-gagnant. Nos partenaires bénéficient de : 
                         </p>
                     </div>
-                    <div className="space-y-6 lg:-mr-48">
+                    <div className="space-y-6 lg:-mr-78">
                         {benefits.map((item,i) => (
                             <Fade triggerOnce direction="left" duration={800}>
                             <div
                             key={i}
                             className="p-8 bg-white rounded-2xl flex items-center justify-center gap-3 lg:gap-6 shadow-lg
                             hover:shadow-xl transition-shadow duration-300">
-                                <span className="w-3 h-3 lg:w-4 md:h-4 rounded-full bg-[#032CA6] shrink-0" />
+                                <span className="w-3 h-3 lg:w-4 rounded-full bg-[#032CA6] shrink-0" />
                                 <div className="flex flex-col gap-2">
                                     <h3 className="text-xl md:text-2xl font-semibold text-black">
                                         {item.title}

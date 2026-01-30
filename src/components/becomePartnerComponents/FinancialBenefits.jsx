@@ -29,7 +29,7 @@ export default function FinancialBenefits() {
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div className="flex justify-center mb-4">
                     <Fade triggerOnce direction="up" duration={800}>
-                        <h3 className="py-1 text-lg px-4 border border-blue-950 tracking-tighter text-blue-950 rounded-full">
+                        <h3 className="py-1 text-lg px-4 border text-center border-blue-950 tracking-tighter text-blue-950 rounded-full">
                             Avantages financiers pour nos partenaires
                         </h3>
                     </Fade>
