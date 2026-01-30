@@ -43,34 +43,60 @@ const Politiques = () => {
                             ou la limitation du traitement, de s’opposer à certains traitements, de demander 
                             la portabilité de leurs informations et de retirer leur consentement à tout moment.
                             Ils peuvent également déposer une plainte auprès de la CNIL. Toutes ces demandes 
-                            peuvent être adressées à 
+                            peuvent être adressées à {" "}
                             <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">
                                 contact@mazia.ai.
                             </a>
                         </p>
                         
                         <p>
-                            Pour assurer la sécurité de vos données, nous utilisons des mesures techniques et organisationnelles robustes, notamment le chiffrement des communications via HTTPS, le stockage sécurisé des données vocales et des transcriptions, l’accès limité aux équipes autorisées et la mise en place de sauvegardes régulières ainsi que d’audits de sécurité.
+                            Pour assurer la sécurité de vos données, nous utilisons des mesures techniques et 
+                            organisationnelles robustes, notamment le chiffrement des communications via HTTPS, 
+                            le stockage sécurisé des données vocales et des transcriptions, l’accès limité aux 
+                            équipes autorisées et la mise en place de sauvegardes régulières ainsi que d’audits 
+                            de sécurité.
                         </p>
                         
                         <p>
-                            Chaque appel automatisé réalisé par notre bot inclut obligatoirement la mention suivante : « Cet appel est effectué par un assistant automatisé pour le compte de SME STRATEGITECH SAS. » Les utilisateurs et les personnes appelées ont la possibilité de se désinscrire des communications automatisées, et nous respectons strictement les listes d’opposition au démarchage téléphonique, telles que Bloctel.
+                            Chaque appel automatisé réalisé par notre bot inclut obligatoirement la mention 
+                            suivante : « Cet appel est effectué par un assistant automatisé pour le compte de 
+                            SME STRATEGITECH SAS. » Les utilisateurs et les personnes appelées ont la possibilité
+                            de se désinscrire des communications automatisées, et nous respectons strictement les 
+                            listes d’opposition au démarchage téléphonique, telles que Bloctel.
                         </p>
                         
                         <p>
-                            Nous utilisons des cookies et autres traceurs pour mesurer l’usage du service, personnaliser l’expérience utilisateur et analyser les performances de notre landing page et de nos campagnes marketing. Ces cookies ne sont déposés qu’après obtention du consentement explicite de l’utilisateur, à l’exception des cookies strictement nécessaires au fonctionnement du service.
+                            Nous utilisons des cookies et autres traceurs pour mesurer l’usage du service, 
+                            personnaliser l’expérience utilisateur et analyser les performances de notre landing 
+                            page et de nos campagnes marketing. Ces cookies ne sont déposés qu’après obtention du
+                            consentement explicite de l’utilisateur, à l’exception des cookies strictement nécessaires 
+                            au fonctionnement du service.
                         </p>
                         
                         <p>
-                            Pour améliorer notre produit et nos services, nous recueillons les feedbacks de nos utilisateurs via des formulaires sécurisés ou, lorsque l’utilisateur y consent, par des retours vocaux. Ces feedbacks sont analysés de manière anonymisée pour identifier les bugs, améliorer les scripts d’appels et optimiser l’expérience globale. Tous les feedbacks sont traités rapidement, catégorisés et suivis par les membres responsables de l’équipe afin de garantir une amélioration continue du service.
+                            Pour améliorer notre produit et nos services, nous recueillons les feedbacks de nos 
+                            utilisateurs via des formulaires sécurisés ou, lorsque l’utilisateur y consent, par des 
+                            retours vocaux. Ces feedbacks sont analysés de manière anonymisée pour identifier les bugs, 
+                            améliorer les scripts d’appels et optimiser l’expérience globale. Tous les feedbacks sont 
+                            traités rapidement, catégorisés et suivis par les membres responsables de l’équipe afin de 
+                            garantir une amélioration continue du service.
                         </p>
                         
                         <p>
-                            Cette politique de confidentialité peut être amenée à évoluer afin de se conformer aux obligations légales ou pour améliorer nos services. Les utilisateurs seront informés des modifications par email ou notification sur notre site. La date de dernière mise à jour est 22/11/2025.
+                            Cette politique de confidentialité peut être amenée à évoluer afin de se conformer aux 
+                            obligations légales ou pour améliorer nos services. Les utilisateurs seront informés des 
+                            modifications par email ou notification sur notre site. La date de dernière mise à jour 
+                            est 22/11/2025.
                         </p>
                         
                         <p>
-                            Pour toute question relative à la protection de vos données ou pour exercer vos droits, vous pouvez nous contacter à l’adresse email contact@mazia.ai ou à notre siège social situé au 144 avenue Charles de ferme, 92200 Neuilly-sur-Seine.
+                            Pour toute question relative à la protection de vos données ou pour exercer vos droits, 
+                            vous pouvez nous contacter à l’adresse email {" "}
+                            <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">
+                            contact@mazia.ai 
+                            </a> {" "}
+                            ou à notre siège social 
+                            situé au 144 avenue Charles de ferme, 92200 Neuilly-sur-Seine.
                         </p>
                     </div>
                 </div>

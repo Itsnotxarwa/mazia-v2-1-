@@ -15,8 +15,11 @@ export default function Cgu() {
                         <p>
                             Les présentes Conditions Générales d’Utilisation régissent l’accès et l’utilisation du service MAZ,
                             proposé par SME STRATEGITECH SAS, société immatriculée au SIREN 985320985, dont le siège social 
-                            est situé au 144 avenue Charles de ferme, 92200 Neuilly-sur-Seine, et joignable à l’adresse email 
-                            contact@mazia.ai. Toute personne accédant au service MAZIA s’engage à respecter l’intégralité de 
+                            est situé au 144 avenue Charles de ferme, 92200 Neuilly-sur-Seine, et joignable à l’adresse email {" "}
+                            <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">
+                            contact@mazia.ai. 
+                            </a> {" "}
+                            Toute personne accédant au service MAZIA s’engage à respecter l’intégralité de 
                             ces conditions. L’utilisation du service implique l’acceptation pleine et entière des présentes 
                             Conditions Générales d’Utilisation.
                         </p>

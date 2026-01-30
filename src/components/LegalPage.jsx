@@ -25,10 +25,10 @@ const LegalPage = () => {
                             La société SME STRATEGITECH SAS est une société par actions simplifiée, 
                             immatriculée au Registre du Commerce et des Sociétés sous le SIREN 985320985, 
                             dont le siège social est situé au 144 avenue Charles de ferme, 92200 
-                            Neuilly-sur-Seine. La société est joignable par email à 
+                            Neuilly-sur-Seine. La société est joignable par email à {" "}
                             <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">
                                 contact@mazia.ai
-                            </a> 
+                            </a> {" "}
                             pour toute question ou notification relative au service.
                         </p>
                         
@@ -109,15 +109,28 @@ const LegalPage = () => {
                         </p>
                         
                         <p>
-                            Les utilisateurs peuvent contacter SME STRATEGITECH SAS pour toute question, réclamation ou demande d’information complémentaire via l’adresse email <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">contact@mazia.ai</a> ou par courrier au siège social. SME STRATEGITECH SAS s’engage à répondre aux demandes dans un délai raisonnable et à traiter les requêtes de manière diligente.
+                            Les utilisateurs peuvent contacter SME STRATEGITECH SAS pour toute question, 
+                            réclamation ou demande d’information complémentaire via l’adresse email {" "}
+                            <a href="mailto:contact@mazia.ai" className="text-blue-600 hover:underline">
+                                contact@mazia.ai
+                            </a> {" "}
+                            ou par courrier au siège social. SME STRATEGITECH SAS s’engage à répondre aux 
+                            demandes dans un délai raisonnable et à traiter les requêtes de manière diligente.
                         </p>
                         
                         <p>
-                            Enfin, les présentes mentions légales, ainsi que le service MAZ, sont régis par le droit français. Tout litige relatif à l’interprétation ou à l’exécution des présentes mentions légales sera soumis aux tribunaux compétents du ressort du siège social de SME STRATEGITECH SAS, sous réserve de la tentative préalable de résolution amiable.
+                            Enfin, les présentes mentions légales, ainsi que le service MAZ, sont régis par le 
+                            droit français. Tout litige relatif à l’interprétation ou à l’exécution des présentes 
+                            mentions légales sera soumis aux tribunaux compétents du ressort du siège social de SME
+                            STRATEGITECH SAS, sous réserve de la tentative préalable de résolution amiable.
                         </p>
 
                         <p>
-                            Ces mentions légales constituent l’ensemble des informations légales obligatoires devant être portées à la connaissance des utilisateurs du service MAZ et du site internet de SME STRATEGITECH SAS. Leur consultation et leur acceptation sont indispensables pour accéder et utiliser le service, et elles complètent les Conditions Générales d’Utilisation ainsi que la Politique de Confidentialité.
+                            Ces mentions légales constituent l’ensemble des informations légales obligatoires 
+                            devant être portées à la connaissance des utilisateurs du service MAZ et du site 
+                            internet de SME STRATEGITECH SAS. Leur consultation et leur acceptation sont 
+                            indispensables pour accéder et utiliser le service, et elles complètent les Conditions 
+                            Générales d’Utilisation ainsi que la Politique de Confidentialité.
                         </p>
                     </div>
                 </div>
