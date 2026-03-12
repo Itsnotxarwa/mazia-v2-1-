@@ -30,8 +30,8 @@ export default function Tarifs() {
                 </div>
                 
                 <Fade triggerOnce direction='up' duration={1000} delay={800}>
-                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 
-                md:mx-16">
+                <div className="grid grid-cols-1 w-257 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-2 
+                ">
                     {TarifsData.map((item,i) => (
                         <div
                         key={i}
@@ -70,14 +70,14 @@ export default function Tarifs() {
                             </div>
 
                             {/* tagline */}
-                            <p className="text-sm text-[#4a5568] leading-4" 
+                            <p className="text-sm text-[#7a8bb5] leading-4" 
                             >
                                 {item.tagline}
                             </p>
                         </div>
                         
                         {/* divider */}
-                        <div className="h-px bg-[rgba(3,44,166)0.07] m-[0_28px]"></div>
+                        <div className="h-px bg-blue-900/20 mx-7"></div>
 
                          {/* features */}
                         <div className="flex flex-1 p-[22px_28px]">
