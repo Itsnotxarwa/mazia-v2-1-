@@ -1,3 +1,4 @@
+import { Check, MoveRight } from "lucide-react";
 import { Fade } from "react-awesome-reveal";
 import TarifsData from "../data/TarifsData";
 
@@ -14,13 +15,14 @@ export default function Tarifs() {
                         </div>
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
                             <h2 className="text-4xl max-w-5xl md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
-                                Choisissez l’offre qui vous convient
+                                Des agents téléphoniques adaptés à votre réalité
                             </h2>
                         </Fade>
                         <div className="flex justify-center">
                         <Fade triggerOnce direction='up' duration={1000} delay={600}>
                             <p className="text-lg max-w-xl mb-6 text-center text-blue-950 px-4">
-                                Mazia propose des formules flexibles pour toutes les tailles d’entreprise. Que vous souhaitiez tester le service ou l’intégrer pleinement à vos opérations, nos options s’adaptent à vos besoins.
+                                Chaque entreprise a ses flux d’appels, ses objectifs et ses contraintes.
+                                Mazia vous accompagne avec des solutions sur mesure, personnalisées et évolutives.
                             </p>
                         </Fade>
                         </div>
@@ -28,49 +30,92 @@ export default function Tarifs() {
                 </div>
                 
                 <Fade triggerOnce direction='up' duration={1000} delay={800}>
-                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 md:mx-16">
+                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 
+                md:mx-16">
                     {TarifsData.map((item,i) => (
                         <div
                         key={i}
-                        className="border border-[#032CA6] rounded-xl p-4 flex flex-col">
-                            <div className="flex justify-center">
-                                <span className="py-1 px-6 text-[#032ca6] bg-[#032ca6]/10 rounded-full font-bold text-xs tracking-wider">
-                                    {item.title}
+                        className="border border-[#032CA6] rounded-2xl flex flex-col">
+
+                        <div className="p-[28px_28px_22px]">
+                            {/* badge */}
+                            <div className="flex">
+                                <span className="py-1 px-6 text-[#7a8bb5]
+                                bg-[#032ca6]/10 rounded-full font-semibold text-xs tracking-wider mb-1.5">
+                                    {item.badge}
                                 </span>
                             </div>
 
-                            <div className="flex justify-center mt-12">
-                                <p className="flex flex-col space-y-4">
-                                    <span className="text-5xl font-bold">{item.price}€</span>
-                                    <span className="text-center text-black/60">/month</span>
-                                </p>
+                            {/* price */}
+                            <div className="flex items-baseline gap-4 mb-2 mt-12">
+                                <span 
+                                className="text-sm font-semibold text-[#9aabca] mr-0.5"
+                                style={{
+                                    fontFamily: "'Cabinet Grotesk', sans-serif",
+                                }}
+                                >
+                                    à partir de
+                                </span>
+                                <span 
+                                className="text-5xl font-extrabold tracking-tighter text-[#0a1628]
+                                leading-px"
+                                >
+                                    {item.price}
+                                </span>
+                                <span
+                                className="text-sm font-medium text-[#9aabca] ml-0.5" 
+                                >
+                                    /mois
+                                </span>
                             </div>
 
-                            <div className="flex flex-1 flex-col justify-between">
+                            {/* tagline */}
+                            <p className="text-sm text-[#4a5568] leading-4" 
+                            >
+                                {item.tagline}
+                            </p>
+                        </div>
+                        
+                        {/* divider */}
+                        <div className="h-px bg-[rgba(3,44,166)0.07] m-[0_28px]"></div>
 
-                            <div className="mt-12 flex flex-col justify-center items-center border-t border-[#032ca6]">
-                                <div className="mt-4 flex flex-col justify-center items-center space-y-2">
-                                    <h3 className="underline text-sm">Fonctionnalités:</h3>
-                                    <ul className=" text-center">
-                                        {item.fonctionnalities.map((f, index) => (
-                                            <li key={index}>
-                                                {f}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="mt-12 flex justify-center">
-                                <a 
-                                href={item.href}
-                                className="bg-[#032ca6] flex justify-center text-nowrap w-full py-3 px-5 text-white 
-                                rounded-lg font-medium transition-transform duration-300 hover:scale-105">
-                                    Commencez votre essai gratuit
-                                </a>
-                            </div>
+                         {/* features */}
+                        <div className="flex flex-1 p-[22px_28px]">
+                            <div className="flex flex-col gap-2.5">
+                                {item.features.map((f,i) => (
+                                    <div
+                                    key={i}
+                                    className="flex items-start justify-start gap-2.5">
+                                        <div className="w-4 h-4 rounded-full shrink-0 mt-px bg-[rgba(3,44,166,0.08)]
+                                        border border-[rgba(3,44,166,0.1)] flex items-center justify-center
+                                        text-[#032ca6]">
+                                            <Check size={12} />
+                                        </div>
+                                        <span className="text-sm text-[#374151] leading-4">
+                                            {f}
+                                        </span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
+
+                        {/* CTA */}
+                        <div className="p-[28px_28px]">
+                            <div className="text-xs text-[#9aabca] italic mb-3.5">
+                                {item.cta}
+                            </div>
+                            <a 
+                            href={item.ctaLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full flex items-center justify-center gap-2
+                            py-3 rounded-xl text-sm font-bold tracking-[-0.01em]
+                            cursor-pointer bg-[#032ca6] text-white">
+                                {item.ctaBtn}
+                                <MoveRight />
+                            </a>
+                        </div>
+                    </div>
                     ))}
                 </div>
                 </Fade>

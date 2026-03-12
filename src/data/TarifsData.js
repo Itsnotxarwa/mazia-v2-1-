@@ -1,37 +1,52 @@
 const TarifsData = [
   {
-    title: "ESSENTIEL",
-    price: 49,
-    fonctionnalities: [
-      "100 minutes incluses",
-      "1 voix pour 1 callbot IA",
-      "Scénarios basiques"
-    ],
-    href: "https://payments-eu1.hubspot.com/payments/purchase/hscs_eu1_rnBn4SrrWBjN5meiWPFRXQTwsrv2Kll9s1d8RWZdlRIRkWsrMOcmoraRGkZKby35?referrer=PAYMENT_LINK"
-  },
-  {
-    title: "PROFESSIONAL",
+    badge: "Vous commencez ?",
     price: 99,
-    fonctionnalities: [
-      "300 minutes incluses",
-      "2 voix pour 2 callbots IA",
-      "Scénarios basiques",
-      "Tableau de bord",
-      "Intégration CRM"
-    ],
-    href: "https://payments-eu1.hubspot.com/payments/purchase/hscs_eu1_CRcYf7mF1F73Y0YmqFeRKAxWQl4oRAM60e8ptjKwv0vISbkFzRHSxvw93DiUi74U?referrer=PAYMENT_LINK"
+    tagline: "Pour les entreprises qui veulent ne plus rater aucun appel.",
+    cta: "Sécurisez vos appels et vos opportunités",
+    ctaBtn: "Préconfigurer mon agent",
+    ctaLink: "https://forms.gle/YSiFnebeuWBM6mZD6",
+    features: [
+      "Agent téléphonique prêt à l'emploi",
+      "Réponse aux appels entrants 24/7",
+      "Qualification des demandes clients",
+      "Prise de rendez-vous automatisée",
+      "Scénario personnalisé simple",
+      "Mise en service accompagnée",
+    ]
   },
   {
-    title: "BUSINESS",
+    badge: "Vous grandissez ?",
     price: 249,
-    fonctionnalities: [
-      "1000 minutes incluses",
-      "Voix illimités pour 5 callbots IA",
+    tagline: "Transformez vos appels en véritable levier de croissance.",
+    cta: "Automatisez sans déshumaniser",
+    ctaBtn: "Préconfigurer mon agent",
+    ctaLink: "https://forms.gle/YSiFnebeuWBM6mZD6",
+    features: [
+      "Agent conversationnel avancé",
+      "Scénarios métier personnalisés",
+      "Qualification commerciale avancée",
+      "Intégration CRM / agenda / outils existants",
+      "Gestion volumes d'appels plus élevés",
+      "Optimisation continue par l'équipe Mazia",
+    ]
+  },
+  {
+    badge: "Vous consolidez ?",
+    price: 475,
+    tagline: "Un agent Mazia intégré à votre organisation.",
+    cta: "Industrialiser votre relation téléphonique",
+    ctaBtn: "Préconfigurer mon agent",
+    ctaLink: "https://forms.gle/YSiFnebeuWBM6mZD6",
+    features: [
+      "Conception sur mesure",
+      "Multi-agents spécialisés",
+      "Intégration complète SI / API",
+      "Appels entrants + sortants",
       "Scénarios complexes",
-      "Tableau de bord et historique",
-      "Intégration multi outils"
-    ],
-    href: "https://payments-eu1.hubspot.com/payments/purchase/hscs_eu1_pEJiKk34VCgFQLTC6za9RmHOLsDCOCkuOOClqFxZq3BjASMQZ6iGojmfuDXHzptw?referrer=PAYMENT_LINK"
+      "Accompagnement stratégique dédié",
+      "Amélioration continue & reporting",
+    ]
   }
 ];
 
