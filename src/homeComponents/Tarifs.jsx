@@ -40,8 +40,8 @@ export default function Tarifs() {
                         <div className="p-[28px_28px_22px]">
                             {/* badge */}
                             <div className="flex">
-                                <span className="py-1 px-6 text-[#7a8bb5]
-                                bg-[#032ca6]/10 rounded-full font-semibold text-xs tracking-wider mb-1.5">
+                                <span className="py-1 px-6 text-[#032ca6]
+                                bg-[#032ca6]/10 rounded-full font-semibold text-[13px] tracking-wider mb-1.5">
                                     {item.badge}
                                 </span>
                             </div>
@@ -49,7 +49,7 @@ export default function Tarifs() {
                             {/* price */}
                             <div className="flex items-baseline gap-4 mb-2 mt-12">
                                 <span 
-                                className="text-sm font-semibold text-[#9aabca] mr-0.5"
+                                className="text-sm font-semibold text-[#032ca6] mr-0.5"
                                 style={{
                                     fontFamily: "'Cabinet Grotesk', sans-serif",
                                 }}
@@ -63,14 +63,14 @@ export default function Tarifs() {
                                     {item.price}
                                 </span>
                                 <span
-                                className="text-sm font-medium text-[#9aabca] ml-0.5" 
+                                className="text-sm font-medium text-[#032ca6] ml-0.5" 
                                 >
                                     /mois
                                 </span>
                             </div>
 
                             {/* tagline */}
-                            <p className="text-sm text-[#7a8bb5] leading-4" 
+                            <p className="text-sm text-[#032ca6] leading-4" 
                             >
                                 {item.tagline}
                             </p>
@@ -101,18 +101,19 @@ export default function Tarifs() {
 
                         {/* CTA */}
                         <div className="p-[28px_28px]">
-                            <div className="text-xs text-[#9aabca] italic mb-3.5">
+                            <div className="text-[13px] text-[#032ca6] italic mb-3.5">
                                 {item.cta}
                             </div>
                             <a 
                             href={item.ctaLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full flex items-center justify-center gap-2
+                            className="group w-full flex items-center justify-center gap-2
                             py-3 rounded-xl text-sm font-bold tracking-[-0.01em]
                             cursor-pointer bg-[#032ca6] text-white">
                                 {item.ctaBtn}
-                                <MoveRight />
+                                <MoveRight className="translate-x-0 transition duration-300
+                                group-hover:translate-x-1.5" />
                             </a>
                         </div>
                     </div>
