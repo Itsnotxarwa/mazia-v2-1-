@@ -156,7 +156,7 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors whitespace-nowrap hover:underline">
-                                    +33 423330751
+                                    +33 189317006
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">
