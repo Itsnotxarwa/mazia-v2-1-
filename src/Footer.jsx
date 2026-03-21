@@ -1,4 +1,4 @@
-import { Mail, Phone, Handshake } from "lucide-react";
+import { Mail, Phone, Handshake, MapPin } from "lucide-react";
 import mazLogo from "./assets/image.png";
 
 export default function Footer() {
@@ -157,6 +157,16 @@ export default function Footer() {
                                 href=""
                                 className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors whitespace-nowrap hover:underline">
                                     +33 189317006
+                                </a>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <div className="flex justify-center p-2 border border-gray-500 bg-gray-50 rounded-lg text-black">
+                                <MapPin size={18} />
+                                </div>
+                                <a 
+                                href=""
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors whitespace-nowrap hover:underline">
+                                    62 rue de Lyon 75012 Paris 12
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">
