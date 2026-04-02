@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Play, Pause } from "lucide-react";
-import Audio from "../assets/audio.mp3";
+import Audio from "../assets/audio.wav";
 
 export default function AudioVisualizer() {
     const pattern = [80, 40, 100, 130, 140, 180, 130, 140, 90, 80 ,180,190,170,120,80];
