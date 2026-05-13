@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import LegalPage from './components/LegalPage';
 import Cgu from './components/cgu';
 import Politiques from './components/politiques';
+import Home from './startup-components/Home';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Conditions-d-utilisation' element={<Cgu />} />
         <Route path='/Politiques-de-confidentialité' element={<Politiques />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/startup' element={<Home />} />
       </Routes>
     </Router>
     </>

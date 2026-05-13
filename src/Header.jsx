@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { ArrowUpRight, ArrowRight, X, AlignJustify  } from "lucide-react";
-import mazLogo from "./assets/image.png"
+import mazLogo from "./assets/image.png";
+import LogoWhite from "./startup-components/assets/logo-white.png";
+
 export default function Header() {
+
+    const location = useLocation();
+
+    const isHomePage = location.pathname === "/";
+    const isStartupPage = location.pathname === "/startup";
 
     const data = [
         {   
@@ -43,14 +50,23 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return(
-        <header className="sticky lg:fixed w-full top-0 z-50 border-b border-black/10 bg-white/80">
+        <header className={`sticky lg:fixed w-full top-0 z-50
+        ${isStartupPage ? "" : "border-b border-black/10 bg-white/80"}`}>
             <div className="mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
-                    <div>
-                        <Link to='/'>
-                        <img src={mazLogo} alt="Logo" className="w-24" />
-                        </Link>
-                    </div>
+                    {isHomePage ? (
+                        <div>
+                            <Link to='/'>
+                                <img src={mazLogo} alt="Logo" className="w-24" />
+                            </Link>
+                        </div>
+                    ) : (
+                        <div>
+                            <Link to='/'>
+                                <img src={LogoWhite} alt="Logo" className="w-24" />
+                            </Link>
+                        </div>
+                    ) }
 
                     <div className="hidden lg:flex">
                         <nav>
@@ -62,8 +78,10 @@ export default function Header() {
                                         title={item.title}
                                         target={item.target}
                                         rel={item.rel}
-                                        className="group relative px-4 py-2 flex items-center justify-center gap-1 
-                                        leading-6 font-medium text-sm transition-all duration-300 rounded-sm group-hover:bg-[#032ca6]/10"
+                                        className={`group relative px-4 py-2 flex items-center justify-center gap-1 
+                                        leading-6 font-medium text-sm transition-all duration-300 rounded-sm 
+                                        ${isStartupPage ? "text-white group-hover:bg-white/10" : "group-hover:bg-[#032ca6]/10"}
+                                        `}
                                         >
                                             <span>
                                                 {item.link}
@@ -78,9 +96,9 @@ export default function Header() {
                     <div className="hidden lg:flex items-center space-x-4">
                         <a 
                         href="/demo"
-                        className="group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
-                        bg-[#032CA6] px-4 py-2 
-                        transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        className={`group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
+                        px-4 py-2 ${isStartupPage ? "bg-linear-to-r from-[#0CCBB4] to-[#0E63DD]" : "bg-[#032CA6] "}
+                        transform transition-transform duration-300 hover:scale-105 cursor-pointer`}
                                 >
                             <ul className="h-6 relative overflow-hidden">
                                 <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
@@ -123,16 +141,16 @@ export default function Header() {
                     <div className="flex items-center">
                         <a 
                         href="/demo"
-                        className="group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
-                        bg-[#032CA6] px-4 py-2 
-                        transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        className={`1group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
+                        px-4 py-2 ${isStartupPage ? "bg-linear-to-r from-[#0CCBB4] to-[#0E63DD]" : "bg-[#032CA6] "}
+                        transform transition-transform duration-300 hover:scale-105 cursor-pointer`}
                         >
                             <ul className="h-6 relative overflow-hidden">
                                 <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
-                                    Essayez Mazia gratuitement <ArrowUpRight size={18} />
+                                    Discutons en maintenant <ArrowUpRight size={18} />
                                 </li>
                                 <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
-                                    Essayez Mazia gratuitement <ArrowRight size={18} />
+                                    Discutons en maintenant <ArrowRight size={18} />
                                 </li>
                             </ul>
                         </a>
