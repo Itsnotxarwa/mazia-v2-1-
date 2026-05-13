@@ -12,13 +12,13 @@ export default function Features() {
         {
             title: "Converser comme un humain",
             description:
-              "Grâce à une intelligence conversationnelle avancée, Mazia comprend les demandes, répond avec naturel et offre une expérience fluide à vos utilisateurs.",
+            "Grâce à une intelligence conversationnelle avancée, Mazia comprend les demandes, répond avec naturel et offre une expérience fluide à vos utilisateurs.",
             icon: Star,
         },
         {
             title: "Réaliser des actions automatisées",
             description:
-              "Mazia ne se contente pas de répondre : il exécute des actions, déclenche des processus et automatise vos interactions en temps réel.",
+            "Mazia ne se contente pas de répondre : il exécute des actions, déclenche des processus et automatise vos interactions en temps réel.",
             icon: Heart,
         },
 ];

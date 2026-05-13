@@ -4,6 +4,7 @@ import Features from "./Features";
 import Divider from "./Divider";
 import Fonctionnalities from "./Fonctionnalities";
 import Footer from "../Footer";
+import Solution from "./Solution";
 
 export default function Home() {
     return(
@@ -15,6 +16,7 @@ export default function Home() {
             <Divider />
             <Fonctionnalities />
             <Divider />
+            <Solution />
             <Footer />
         </div>
     )
