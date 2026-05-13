@@ -5,6 +5,8 @@ import Divider from "./Divider";
 import Fonctionnalities from "./Fonctionnalities";
 import Footer from "../Footer";
 import Solution from "./Solution";
+import QuickSetup from "./QuickSetup";
+import DataPrivacy from "./DataPrivacy";
 
 export default function Home() {
     return(
@@ -17,6 +19,10 @@ export default function Home() {
             <Fonctionnalities />
             <Divider />
             <Solution />
+            <Divider />
+            <QuickSetup />
+            <Divider />
+            <DataPrivacy />
             <Footer />
         </div>
     )

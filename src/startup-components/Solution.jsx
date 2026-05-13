@@ -91,7 +91,7 @@ export default function Solution() {
     ]
     return(
         <section className="relative py-24">
-            <div className="max-w-6xl mx-auto px-8 sm:px-6 lg:px-16">
+            <div className="max-w-6xl mx-auto px-8">
                 <div className="flex items-center justify-center mb-6">
                     <div className="space-y-4">
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
