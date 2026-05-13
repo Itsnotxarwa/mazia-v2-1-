@@ -7,6 +7,7 @@ import Footer from "../Footer";
 import Solution from "./Solution";
 import QuickSetup from "./QuickSetup";
 import DataPrivacy from "./DataPrivacy";
+import Integrations from "./Integrations";
 
 export default function Home() {
     return(
@@ -21,8 +22,8 @@ export default function Home() {
             <Solution />
             <Divider />
             <QuickSetup />
-            <Divider />
             <DataPrivacy />
+            <Integrations />
             <Footer />
         </div>
     )
