@@ -15,7 +15,7 @@ export default function BenefitsSection() {
                     </div>
                     <Fade triggerOnce direction='up' duration={1000} delay={400}>
                     <h2 className="text-4xl max-w-5xl md:text-5xl text-black font-bold md:leading-14 mb-8 text-center">
-                        Un assisstant IA pour vos appels professionels
+                        Un assisstant IA pour vos appels professionelles
                     </h2>
                     </Fade>
                     <div className="flex justify-center">
