@@ -5,7 +5,7 @@ export default function DataPrivacy() {
         <section className="relative py-24">
             <div className="max-w-5xl mx-auto px-8">
                 <div className="flex items-center justify-center mb-6">
-                    <div className="space-y-4 p-12 bg-[#0F162B] shadow-[0_10px_40px_rgba(14,99,221,0.18)]">
+                    <div className="space-y-4 p-8 md:p-12 bg-[#0F162B] shadow-[0_10px_40px_rgba(14,99,221,0.18)]">
                         <Fade triggerOnce direction='up' duration={1000} delay={400}
                         className="flex justify-center">
                         <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@ export default function DataPrivacy() {
                         </svg>
                         </Fade>
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
-                            <h2 className="text-2xl max-w-216 px-8 md:text-6xl font-medium mb-6 text-center
+                            <h2 className="text-4xl max-w-216 px-8 md:text-6xl font-medium mb-6 text-center
                             text-transparent bg-clip-text bg-linear-to-r from-white to-[#0CCBB4]
                             ">
                                 Vous êtes seul responsable de vos données

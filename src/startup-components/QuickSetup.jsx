@@ -27,7 +27,7 @@ export default function QuickSetup() {
                 <div className="flex items-center justify-center mb-6">
                     <div className="space-y-4">
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
-                            <h2 className="text-2xl max-w-5xl md:text-6xl font-medium mb-10 text-center
+                            <h2 className="text-4xl max-w-5xl md:text-6xl font-medium mb-10 text-center
                             text-transparent bg-clip-text bg-linear-to-r from-white to-[#0CCBB4] ">
                                 Une mise en place simple et rapide
                             </h2>

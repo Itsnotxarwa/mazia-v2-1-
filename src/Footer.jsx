@@ -123,7 +123,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`${isStartupPage ? "text-white" : "text-black/60"} text-lg leading-relaxed tracking-tight transition-colors hover:text-black`}>
-                                    Startup
+                                    Start-up
                                 </a>
                             </li>
                         </ul>
@@ -186,7 +186,7 @@ export default function Footer() {
                                 <a 
                                 href=""
                                 className={`${isStartupPage ? "text-white" : "text-black/60"} text-lg leading-relaxed tracking-tight transition-colors whitespace-nowrap hover:underline`}>
-                                    62 rue de Lyon 75012 Paris 12
+                                    61 rue de Lyon 75012 Paris 12
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">

@@ -34,11 +34,11 @@ export default function Hero() {
                                 transition-all duration-400 transform  hover:scale-105 group">
                                     <ul className="relative h-6 overflow-hidden">
                                         <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
-                                            Démo sur mesure
+                                            Prendre rendez-vous
                                             <ArrowUpRight size={22} />
                                         </li>
                                         <li className="flex items-center transform transition-transform translate-y-0 duration-300 group-hover:-translate-y-full">
-                                            Démo sur mesure
+                                            Prendre rendez-vous
                                             <ArrowRight size={22} />
                                         </li>
                                     </ul> 

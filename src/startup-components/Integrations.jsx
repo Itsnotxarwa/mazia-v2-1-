@@ -8,7 +8,7 @@ export default function Integrations() {
                 <div className="flex items-center justify-center mb-6">
                     <div>
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
-                            <h2 className="text-2xl max-w-4xl px-8 md:text-6xl font-medium mb-24 text-center">
+                            <h2 className="text-4xl max-w-4xl px-8 md:text-6xl font-medium mb-24 text-center">
                                 Compatible avec vos outils du quotidien
                             </h2>
                         </Fade>

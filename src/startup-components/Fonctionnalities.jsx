@@ -27,7 +27,7 @@ export default function Fonctionnalities() {
                 <div className="flex items-center justify-center mb-6">
                     <div className="space-y-4">
                         <Fade triggerOnce direction='up' duration={1000} delay={400}>
-                            <h2 className="text-2xl max-w-5xl md:text-6xl font-medium mb-10 text-center
+                            <h2 className="text-4xl max-w-5xl md:text-6xl font-medium mb-10 text-center
                             text-transparent bg-clip-text bg-linear-to-r from-white to-[#0CCBB4] ">
                                 Comment Mazia fonctionne
                             </h2>
@@ -48,7 +48,7 @@ export default function Fonctionnalities() {
                             <Fade triggerOnce direction="left" duration={800} delay={400}>
                                 <div
                                 key={i}  
-                                className="flex justify-between items-center mb-16">
+                                className="mb-16 flex flex-col md:flex-row items-center justify-between gap-8">
                                     <div className="flex flex-col justify-start items-start space-y-6">
                                         <h3 className="text-[32px] font-medium max-w-sm leading-shung">
                                         {item.title}
