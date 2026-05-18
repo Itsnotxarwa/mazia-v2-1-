@@ -45,6 +45,12 @@ export default function Header() {
             target: "_blank",
             rel: "noopener noreferrer"
         },
+        {   
+            link: "Start-up",
+            href: "/startup",
+            target: "_blank",
+            rel: "noopener noreferrer"
+        },
     ]
 
     const [menuOpen, setMenuOpen] = useState(false);
