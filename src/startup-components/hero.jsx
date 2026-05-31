@@ -27,6 +27,8 @@ export default function Hero() {
                             <div className="mt-12 flex gap-4 items-center justify-center">
 
                                 <a
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 href="https://meetings-eu1.hubspot.com/mazia"
                                 className="relative overflow-hidden flex items-center justify-center 
                                 gap-3 text-sm font-medium  whitespace-nowrap rounded-[30px] cursor-pointer
