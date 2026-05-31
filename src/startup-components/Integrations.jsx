@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import Hubspot from "./assets/hubsport.png";
 import Salesforce from "./assets/salesforce.png";
 import Slack from "./assets/slack.png";
-import Whatsapp from "./assets/whatsapp.png";
+import Whatsapp from "./assets/whatssap.png";
 import Gmail from "./assets/gmail.png";
 import Airtable from "./assets/airtable.png";
 
