@@ -131,9 +131,9 @@ export default function Header() {
                     
                     </div>
                     {menuOpen && (
-                    <div className="flex flex-col items-center justify-between absolute top-0 left-0 w-full lg:hidden min-h-screen z-60 overflow-hidden
-                    bg-[#e2e9fe]/90 backdrop-blur-sm px-4 pt-24 
-                    pb-4 text-lg font-medium">
+                    <div className={`flex flex-col items-center justify-between absolute top-0 left-0 w-full lg:hidden min-h-screen z-60 overflow-hidden
+                    backdrop-blur-sm px-4 pt-24 ${isStartupPage ? "bg-[#0F162B]/90" : "bg-[#e2e9fe]/90"}
+                    pb-4 text-lg font-medium`}>
                         <div className="flex flex-col items-center gap-2 pb-4 w-full">
                             {data.map((link, index) => (
                                 <div

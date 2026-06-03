@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
+import AudioPlayer from "./AudioPlayer";
 
 export default function Hero() {
     return(
@@ -47,8 +48,13 @@ export default function Hero() {
                                 </a>
                             </div>
                         </Fade>
-                    </div>
                 </div>
+                <Fade direction="up" triggerOnce duration={800} delay={600}>
+                    <div className="flex justify-center">
+                        <AudioPlayer />
+                    </div>
+                </Fade>
+            </div>
             </section>
     )
 }
