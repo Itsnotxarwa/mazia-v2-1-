@@ -8,9 +8,9 @@ import Airtable from "./assets/airtable.png";
 
 export default function Integrations() {
     const logos = [
-        { src: Hubspot, alt: "Hubspot", w: 16, h: 16 },
-        { src: Salesforce, alt: "Salesforce", w: 16, h: 16 },
-        { src: Slack, alt: "Slack", w: 16, h: 16 },
+        { src: Hubspot, alt: "Hubspot", w: 12, h: 12 },
+        { src: Salesforce, alt: "Salesforce", w: 12, h: 12 },
+        { src: Slack, alt: "Slack", w: 12, h: 12 },
         { src: Whatsapp, alt: "Whatsapp", w: 25, h: 25 },
         { src: Gmail, alt: "Gmail", w: 12, h: 12 },
         { src: Airtable, alt: "Airtable", w: 25, h: 25 },
