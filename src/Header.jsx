@@ -98,75 +98,77 @@ export default function Header() {
                             </ul>
                         </nav>
                     </div>
-                
-                    <div className="hidden lg:flex items-center space-x-4">
-                        <a 
-                        href="/demo"
-                        className={`group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
-                        px-4 py-2 ${isStartupPage ? "bg-linear-to-r from-[#0CCBB4] to-[#0E63DD]" : "bg-[#032CA6] "}
-                        transform transition-transform duration-300 hover:scale-105 cursor-pointer`}
-                                >
-                            <ul className="h-6 relative overflow-hidden">
-                                <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
-                                    Discutons en maintenant <ArrowUpRight size={18} />
-                                </li>
-                                <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
-                                    Discutons en maintenant <ArrowRight size={18} />
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
+
+                    {isHomePage && (
+                        <div className="hidden lg:flex items-center space-x-4">
+                            <a 
+                            href="/demo"
+                            className="group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
+                            px-4 py-2 bg-[#032CA6] 
+                            transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                            >
+                                <ul className="h-6 relative overflow-hidden">
+                                    <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
+                                        Discutons en maintenant <ArrowUpRight size={18} />
+                                    </li>
+                                    <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
+                                        Discutons en maintenant <ArrowRight size={18} />
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    )}
+                    
 
                     {/* Mobile Menu Button */}
                 <div className="lg:hidden flex items-center justify-center">
-                <div
-                className="cursor-pointer flex relative justify-center"
-                onClick={() => setMenuOpen(!menuOpen)}
-                >
+                    <div
+                    className="cursor-pointer flex relative justify-center"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    >
                     
-                    {!menuOpen ? <AlignJustify /> : <span className="absolute z-80 right-1"><X /></span>}
+                        {!menuOpen ? <AlignJustify /> : <span className="absolute z-80 right-1"><X /></span>}
                     
-                </div>
-                {menuOpen && (
-                <div className="flex flex-col items-center justify-between absolute top-0 left-0 w-full lg:hidden min-h-screen z-60 overflow-hidden
-                bg-[#e2e9fe]/90 backdrop-blur-sm px-4 pt-24 
-                pb-4 text-lg font-medium">
-                    <div className="flex flex-col items-center gap-2 pb-4 w-full">
-                        {data.map((link, index) => (
-                            <div
-                            key={index} 
-                            className="submenu-item">
-                                <a href={link.href} className="submenu-link">
-                                    {link.link}
+                    </div>
+                    {menuOpen && (
+                    <div className="flex flex-col items-center justify-between absolute top-0 left-0 w-full lg:hidden min-h-screen z-60 overflow-hidden
+                    bg-[#e2e9fe]/90 backdrop-blur-sm px-4 pt-24 
+                    pb-4 text-lg font-medium">
+                        <div className="flex flex-col items-center gap-2 pb-4 w-full">
+                            {data.map((link, index) => (
+                                <div
+                                key={index} 
+                                className="submenu-item">
+                                    <a href={link.href} className="submenu-link">
+                                        {link.link}
+                                    </a>
+                                </div>
+                            ))}
+                        </div>
+
+                        {isHomePage && (
+                            <div className="flex items-center">
+                                <a 
+                                href="/demo"
+                                className="group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
+                                px-4 py-2 bg-[#032CA6] transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+                                >
+                                    <ul className="h-6 relative overflow-hidden">
+                                        <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
+                                            Discutons en maintenant <ArrowUpRight size={18} />
+                                        </li>
+                                        <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
+                                            Discutons en maintenant <ArrowRight size={18} />
+                                        </li>
+                                    </ul>
                                 </a>
                             </div>
-                        ))}
-                    
+                        )}
                     </div>
-
-                    <div className="flex items-center">
-                        <a 
-                        href="/demo"
-                        className={`1group relative text-sm font-medium h-9 text-white whitespace-nowrap rounded-lg 
-                        px-4 py-2 ${isStartupPage ? "bg-linear-to-r from-[#0CCBB4] to-[#0E63DD]" : "bg-[#032CA6] "}
-                        transform transition-transform duration-300 hover:scale-105 cursor-pointer`}
-                        >
-                            <ul className="h-6 relative overflow-hidden">
-                                <li className="flex items-center transform transition-transform duration-300 group-hover:-translate-y-full">
-                                    Discutons en maintenant <ArrowUpRight size={18} />
-                                </li>
-                                <li className="flex items-center transform transition-transform duration-300 translate-y-0 group-hover:-translate-y-full">
-                                    Discutons en maintenant <ArrowRight size={18} />
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
-                </div>
-                )}
-                </div>
-
+                    )}
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
     )
 }
