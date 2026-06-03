@@ -8,12 +8,12 @@ import Airtable from "./assets/airtable.png";
 
 export default function Integrations() {
     const logos = [
-        { src: Hubspot, alt: "Hubspot" },
-        { src: Salesforce, alt: "Salesforce" },
-        { src: Slack, alt: "Slack" },
-        { src: Whatsapp, alt: "Whatsapp" },
-        { src: Gmail, alt: "Gmail" },
-        { src: Airtable, alt: "Airtable" },
+        { src: Hubspot, alt: "Hubspot", w: 20, h: 20 },
+        { src: Salesforce, alt: "Salesforce", w: 20, h: 20 },
+        { src: Slack, alt: "Slack", w: 20, h: 20 },
+        { src: Whatsapp, alt: "Whatsapp", w: 25, h: 25 },
+        { src: Gmail, alt: "Gmail", w: 12, h: 12 },
+        { src: Airtable, alt: "Airtable", w: 25, h: 25 },
     ];
 
     return(
@@ -46,7 +46,7 @@ export default function Integrations() {
                                     <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className="w-20 h-20 object-contain"
+                                    className= {`object-contain w-${logo.w} h-${logo.h}`}
                                     />
                                 </div>
                             ))}
