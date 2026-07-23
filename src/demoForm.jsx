@@ -45,6 +45,7 @@ export default function DemoForm() {
         setEmail("");
         setPhoneNumber("");
         setCaptchaDone(false);
+        setSelectedCountry(allCountries[0]);
         recaptchaRef.current.reset();
     };
     
@@ -94,7 +95,8 @@ export default function DemoForm() {
                     first_name: firstName,
                     last_name: lastName,
                     email: email,
-                    phone_number: `+${selectedCountry.code}${phoneNumber}`
+                    country_code: `+${selectedCountry.code}`,
+                    phone_number: `${phoneNumber}`
                 }),
             })
             
@@ -201,7 +203,7 @@ export default function DemoForm() {
                 items-center justify-between"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
-                    <span>{selectedCountry ? `+${selectedCountry.code}` : " +33"}</span>
+                    <span>+{selectedCountry.code}</span>
                     <span>
                         <ChevronDown size={12} />
                     </span>
@@ -228,7 +230,7 @@ export default function DemoForm() {
                     <ul className="absolute z-10 mt-1 w-full max-h-60 overflow-auto bg-white border rounded-md shadow-lg">
                         {allCountries.map((c) => (
                             <li
-                            key={c.code}
+                            key={c.iso}
                             className="flex items-center px-3 py-2 hover:bg-gray-100 cursor-pointer"
                             onClick={() => {
                                 setSelectedCountry(c);
