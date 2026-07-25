@@ -207,7 +207,7 @@ export default function DemoForm() {
                     <CountryFlag countryCode={selectedCountry.iso} svg style={{ width: "1.25em", height: "1.25em" }} />
                     <span>+{selectedCountry.code}</span>
                     <span>
-                        <ChevronDown size={12} className={`${dropdownOpen ? "rotate-180" : ""}`} />
+                        <ChevronDown size={12} className={`transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""}`} />
                     </span>
                 </div>
                 </div>
