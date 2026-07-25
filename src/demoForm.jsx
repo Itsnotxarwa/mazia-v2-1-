@@ -3,6 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
 import { allCountries } from "./data/countries";
 import { ChevronDown } from "lucide-react";
+import CountryFlag from "react-country-flag";
 
 
 export default function DemoForm() {
@@ -200,12 +201,13 @@ export default function DemoForm() {
                 <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
                 <div
                 className="text-sm outline-none rounded-lg h-full text-[#032ca6] cursor-pointer flex 
-                items-center justify-between"
+                items-center gap-px"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
+                    <CountryFlag countryCode={selectedCountry.iso} svg style={{ width: "1.25em", height: "1.25em" }} />
                     <span>+{selectedCountry.code}</span>
                     <span>
-                        <ChevronDown size={12} />
+                        <ChevronDown size={12} className={`${dropdownOpen ? "rotate-180" : ""}`} />
                     </span>
                 </div>
                 </div>
@@ -214,7 +216,7 @@ export default function DemoForm() {
                     type="tel" 
                     placeholder="189317006"
                     className="h-10 px-3 py-2 rounded-md w-full 
-                    border border-gray-300 pl-18 bg-white placeholder:text-gray-500 text-sm text-gray-900
+                    border border-gray-300 pl-24 bg-white placeholder:text-gray-500 text-sm text-gray-900
                     focus:border-[#032ca6] focus-visible:outline-none"
                     value={phoneNumber}
                     onChange={(e) => {
@@ -231,20 +233,21 @@ export default function DemoForm() {
                         {allCountries.map((c) => (
                             <li
                             key={c.iso}
-                            className="flex items-center px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                            className="flex items-center px-3 py-2 hover:bg-gray-100 cursor-pointer gap-1"
                             onClick={() => {
                                 setSelectedCountry(c);
                                 setDropdownOpen(false);
                             }}
-                        >
-                        <span>{c.country} (+{c.code})</span>
-                    </li>
-                ))}
-                </ul>
-            )}
+                                >
+                                    <CountryFlag countryCode={c.iso} svg style={{ width: "1.25em", height: "1.25em" }} />
+                                    <span>{c.country} (+{c.code})</span>
+                            </li>
+                        ))}
+                        </ul>
+                    )}
+                </div>
             </div>
-            </div>
-             {phoneError && <p style={{ color: "red" }}>{phoneError}</p>}
+            {phoneError && <p style={{ color: "red" }}>{phoneError}</p>}
                 <div className="flex items-center justify-center">
                     <ReCAPTCHA
                     sitekey="6LdDjTosAAAAAEJ50yZp6duJaP5hfuO2HQfTdHXt"
