@@ -6,7 +6,6 @@ import LogoWhite from "./startup-components/assets/logo-white.png";
 export default function Footer() {
         const location = useLocation();
     
-        const isHomePage = location.pathname === "/";
         const isStartupPage = location.pathname === "/startup";
     return(
         <footer className="pt-24 pb-12 sm:pt-32 sm:pb-16">
@@ -14,10 +13,10 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row space-y-6 gap-12 md:gap-24">
                     <div className='flex flex-col justify-between space-y-6'>
                         <div className='space-y-6'>
-                            {isHomePage ? (
-                                <img src={mazLogo} alt="Logo" className="w-44" />
-                            ) : (
+                            {isStartupPage ? (
                                 <img src={LogoWhite} alt="Logo" className="w-44" />
+                            ) : (
+                                <img src={mazLogo} alt="Logo" className="w-44" />
                             )}
                         
                         <p className='text-lg leading-relaxed'>

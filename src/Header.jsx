@@ -8,7 +8,6 @@ export default function Header() {
 
     const location = useLocation();
 
-    const isHomePage = location.pathname === "/";
     const isStartupPage = location.pathname === "/startup";
 
     const data = [
@@ -60,16 +59,16 @@ export default function Header() {
         ${isStartupPage ? "" : "border-b border-black/10 bg-white/80"}`}>
             <div className="mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
-                    {isHomePage ? (
+                    {isStartupPage ? (
                         <div>
                             <Link to='/'>
-                                <img src={mazLogo} alt="Logo" className="w-24" />
+                                <img src={LogoWhite} alt="Logo" className="w-24" />
                             </Link>
                         </div>
                     ) : (
                         <div>
                             <Link to='/'>
-                                <img src={LogoWhite} alt="Logo" className="w-24" />
+                                <img src={mazLogo} alt="Logo" className="w-24" />
                             </Link>
                         </div>
                     ) }
@@ -99,7 +98,7 @@ export default function Header() {
                         </nav>
                     </div>
 
-                    {isHomePage && (
+                    {isStartupPage ? null : (
                         <div className="hidden lg:flex items-center space-x-4">
                             <a 
                             href="/demo"
@@ -146,7 +145,7 @@ export default function Header() {
                             ))}
                         </div>
 
-                        {isHomePage && (
+                        {isStartupPage ? null : (
                             <div className="flex items-center">
                                 <a 
                                 href="/demo"
