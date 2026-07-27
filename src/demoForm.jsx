@@ -68,7 +68,7 @@ export default function DemoForm() {
             return;
         }
     
-        const response = await fetch("https://api.voixup.fr/calls/verify-captcha", {
+        const response = await fetch("https://api.mazia.ai/calls/verify-captcha", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export default function DemoForm() {
     
         // faire un appele
         try{
-            const res = await fetch("https://api.voixup.fr/calls/demo-outbound-call", {
+            const res = await fetch("https://api.mazia.ai/calls/demo-outbound-call", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
